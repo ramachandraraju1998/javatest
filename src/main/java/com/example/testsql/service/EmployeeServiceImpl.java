@@ -23,26 +23,7 @@ public class EmployeeServiceImpl implements EmployeeService{
     @Override
     public List<Employee> fetchAllEmployees() {
         List<Employee> allEmployees = employeeRepository.findAll();
-//        for(int i=0;i<allEmployees.size();i++) {
-//        	float anual_sal = allEmployees.get(i).getSalary()*12;
-//        	System.out.println("annnnn"+anual_sal);
-//        	allEmployees.get(i).setSlab("");
-//        	if(anual_sal<=250000) {
-//        		allEmployees.get(i).setSlab("No Tax");
-//        	}
-//        	
-//        	if(anual_sal>250000 && anual_sal<=500000) {
-//        		allEmployees.get(i).setSlab("5% Tax");
-//        	}
-//        	
-//        	if(anual_sal>500000  && anual_sal<=1000000) {
-//        		allEmployees.get(i).setSlab("10% Tax");
-//        	}
-//        	
-//        	if(anual_sal>1000000) {
-//        		allEmployees.get(i).setSlab("20% Tax");
-//        	}
-//        }
+//    
         return allEmployees;
     }
 
